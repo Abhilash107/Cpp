@@ -9,3 +9,12 @@ Stream Manipulators: It provides various manipulators (like std::endl, std::setw
 
 2. using namespace std;
 The line using namespace std; in C++ is a directive that allows you to use all the names in the std (standard) namespace without needing to prefix them with std::
+
+3. use of << and >>
+In C++, the << and >> operators are commonly used as stream insertion and extraction operators, respectively.
+
+The << operator is used to send (or "insert") data to an output stream, such as std::cout
+
+The >> operator is used to extract data from an input stream, such as std::cin. It allows you to read user input from the console or read data from a file.
+
+
