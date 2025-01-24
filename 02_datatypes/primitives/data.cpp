@@ -25,10 +25,6 @@ int main(){
     //bool isTransferListed = 'A';//1
     //bool isTransferListed = '';//Error empty char constant
 
-
-
-
-
     cout << ratings << endl;
 
 
