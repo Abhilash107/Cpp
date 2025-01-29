@@ -24,7 +24,9 @@
         "*.rex": "rexx",
         "*.rexx": "rexx",
         "iostream": "cpp",
-        "ostream": "cpp"
+        "ostream": "cpp",
+        "map": "cpp",
+        "algorithm": "cpp"
     },
     "editor.fontSize": 14
 }
