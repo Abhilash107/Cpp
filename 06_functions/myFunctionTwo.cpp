@@ -15,8 +15,5 @@ int main(){
     cout << num << endl;//10
 
 
-
-
-
     return 0;
 }
