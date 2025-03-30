@@ -25,6 +25,4 @@ int main(){
     c = a + b;
     c.getData();//30
 
-
-
 }
