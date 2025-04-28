@@ -4,35 +4,34 @@
 
 
 // Make code easier to type with "using namespace"
-using namespace sf;
+using namespace sf;// Include important C++ libraries here
 // Function declaration
-void updateBranches(int seed);
+void updateBranches(int seed);//
 
-const int NUM_BRANCHES = 6;
-Sprite branches[NUM_BRANCHES];
+const int NUM_BRANCHES = 6;//* How many branches we can have
+Sprite branches[NUM_BRANCHES];//* Create an array of branch sprites
 
 // Where is the player/branch? 
 // Left or Right
-enum class side { LEFT, RIGHT, NONE };
-side branchPositions[NUM_BRANCHES];
+enum class side { LEFT, RIGHT, NONE };// Create a new enum called side
+side branchPositions[NUM_BRANCHES];// Create an array to hold the side of each branch
 
 
 int main()
 {
-	// Create a video mode object
-	VideoMode vm(1920, 1080);
+	VideoMode vm(1920, 1080);//* Create a videomode object
 
 	// Create and open a window for the game
-	RenderWindow window(vm, "Timber!!!", Style::Fullscreen);
+	RenderWindow window(vm, "Timber!!!", Style::Fullscreen);// Create a window object
 
 	// Create a texture to hold a graphic on the GPU
-	Texture textureBackground;
+	Texture textureBackground;//* Create a texture object
 
 	// Load a graphic into the texture
-	textureBackground.loadFromFile("graphics/background.png");
+	textureBackground.loadFromFile("graphics/background.png");//
 
 	// Create a sprite
-	Sprite spriteBackground;
+	Sprite spriteBackground;//
 
 	// Attach the texture to the sprite
 	spriteBackground.setTexture(textureBackground);
@@ -204,8 +203,6 @@ int main()
 	
 
 	// Out of time
-	
-	
 	while (window.isOpen())
 	{
 		// score ++;
@@ -232,7 +229,10 @@ int main()
 		****************************************
 		*/
 
-		if (Keyboard::isKeyPressed(Keyboard::Escape))
+		if (Keyboard::isKeyPressed(Keyboard::Escape))//* Escape key pressed
+        {
+            window.close();
+        }
 		{
 			window.close();
 		}
