@@ -1,7 +1,18 @@
 #include <iostream>
-suing namespace std;
-int main()
-{
-int num[]={1,2,3,4,5, 6};
-num[1]==[1]num ? cout<<"Success" : cout<<"Error";
+using namespace std;
+
+class Test {
+    int x = 10;
+    Test(){}
+
+    Test(int x = 5) {
+        cout << x; // Correct: access the class member x
+    }
+
+};
+
+int main() {
+    Test obj(5);
+    
+    return 0;
 }
