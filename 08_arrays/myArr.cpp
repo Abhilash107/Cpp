@@ -8,6 +8,7 @@ int main(){
     for(int element: nums){
         cout << element << " ";
     }
+
     // here if we try to access an invalid index of arr, an garbage value is returned
     cout << endl;
     for(int i = 0;i < 5;i++){
