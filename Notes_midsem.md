@@ -22,7 +22,6 @@ Objects → Actual instances based on classes.
 ### 
 
 1. Objects
-Definition:
 An object is a real-world entity with properties (data) and actions (behavior).
 
 Real-life example:
@@ -140,7 +139,7 @@ Examples: C++, Java, Smalltalk, Object Pascal
 
 Summary:
 
-Object-oriented = Object-based features + Inheritance + Dynamic Binding
+***Object-oriented = Object-based features + Inheritance + Dynamic Binding***
 
 
 ### Promising Areas for OOP Applications:
@@ -207,7 +206,7 @@ Suitable for simpler systems but lacks full OOP capabilities.
 
 Examples: Ada, JavaScript (before ES6).
 
--   The <iostream> file is a standard C++ library that provides functionalities for input and output (I/O) operations ***
+-   ***The <iostream> file is a standard C++ library that provides functionalities for input and output (I/O) operations ***
 
 - Namespace is a new concept introduced by the ANSI C++ standards
 committee. This defines a scope for the identifiers that are used in a
@@ -305,6 +304,7 @@ Pointers: void* is a generic pointer type that can point to any data type.
 Indicating no data: In function parameters or return types, void can indicate that no data is expected or returned.
 
 - 3.5 Can we assign a void pointer to an int type pointer? If not, why? How can we achieve this?
+
 No, you cannot assign a void* directly to an int* because void is a generic pointer type that does not know the type of the object it points to. To achieve this, you need to cast the void* to int*.
 
 Example:
@@ -441,10 +441,7 @@ Recursive functions.
 
 - Inline expansion speeds up a program by eliminating the overhead of function calls, but it increases memory usage because the function's code is duplicated at each call site. Therefore, a trade-off between speed and memory usage is necessary.
 
-- A default argument is checked for type at the time of declaration
-and evaluated at the time of call. One important point to note is that
-only the trailing arguments can have default values and therefore we
-must add defaults from right to left 
+- A default argument is checked for type at the time of declaration and evaluated at the time of call. One important point to note is that only the trailing arguments can have default values and therefore we must add defaults from right to left 
 
 4.4 Advantage of passing arguments by reference:
 The main advantage is that it allows the function to modify the actual argument's value in the calling code, and it avoids copying large data structures, improving performance.
