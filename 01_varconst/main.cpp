@@ -3,6 +3,7 @@
 using namespace std;
 
 int main(){
+    //Structure of a program
     //cout << "hello" << endl;
     int score = 10;
     //identifier:
@@ -11,12 +12,12 @@ int main(){
 
     const int userId = 124;//fixed value, can't be changed
     //userId = 123;//expression must be a modifiable lvalue
+    cout << 19;
 
 
 
 
     return 0;
     //data -> store and process -> display
-
 
 }
