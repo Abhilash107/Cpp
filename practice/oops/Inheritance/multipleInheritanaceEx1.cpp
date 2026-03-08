@@ -67,15 +67,12 @@ class D : public B, public C { };
 int main() {
 
     C obj;
-
     obj.showA();
     obj.showB();
 
     Result r;
-
     r.name = "Rahul";
     r.roll = 101;
-
     r.display();
 
 
